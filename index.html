@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Digital Feedback Form</h2>
+    <form id="feedbackForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label>Feedback Type</label>
+        <div class="radio-group">
+          <label><input type="radio" name="type" value="Query"> Query</label>
+          <label><input type="radio" name="type" value="Comment"> Comment</label>
+          <label><input type="radio" name="type" value="Suggestion"> Suggestion</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Your Rating</label>
+        <div class="rating">
+          <input type="radio" name="rating" id="star5" value="5"><label for="star5">★</label>
+          <input type="radio" name="rating" id="star4" value="4"><label for="star4">★</label>
+          <input type="radio" name="rating" id="star3" value="3"><label for="star3">★</label>
+          <input type="radio" name="rating" id="star2" value="2"><label for="star2">★</label>
+          <input type="radio" name="rating" id="star1" value="1"><label for="star1">★</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="feedback">Your Feedback</label>
+        <textarea id="feedback" rows="4" placeholder="Write your feedback..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Feedback</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

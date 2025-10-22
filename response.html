@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Submitted</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Thank You for Your Feedback!</h2>
+    <div id="displayResponse"></div>
+    <a href="index.html" class="submit-btn" style="text-decoration:none;text-align:center;display:block;margin-top:15px;">Submit Another</a>
+  </div>
+
+  <script>
+    const data = JSON.parse(localStorage.getItem("feedbackData"));
+    if (data) {
+      document.getElementById("displayResponse").innerHTML = `
+        <p><strong>Name:</strong> ${data.name}</p>
+        <p><strong>Email:</strong> ${data.email}</p>
+        <p><strong>Feedback Type:</strong> ${data.type}</p>
+        <p><strong>Rating:</strong> ${"⭐".repeat(data.rating)}</p>
+        <p><strong>Message:</strong> ${data.feedback}</p>
+      `;
+    }
+  </script>
+</body>
+</html>

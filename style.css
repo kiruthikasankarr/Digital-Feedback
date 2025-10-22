@@ -1,0 +1,104 @@
+/* Google Form Inspired Styling */
+body {
+    background: #f0f3ff;
+    font-family: "Google Sans", "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .form-container {
+    background: #fff;
+    width: 450px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-top: 8px solid #4285f4;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dadce0;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border: 1px solid #4285f4;
+    box-shadow: 0 0 3px #4285f4;
+  }
+  
+  .radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .rating {
+    direction: rtl;
+    display: flex;
+    justify-content: start;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 25px;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #ffb400;
+  }
+  
+  .submit-btn {
+    background: #4285f4;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #3367d6;
+  }
+  
